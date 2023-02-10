@@ -5,6 +5,7 @@ document.getElementById("btn-update").addEventListener("click", function () {
   const TextUpdate = document.getElementById("text-remove");
 
   TextUpdate.innerText = inputText;
+  TextUpdate.style.display = "block";
   inputUpdate.value = "";
 });
 
