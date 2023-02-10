@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex gap-5 justify-center items-center my-28">
+      <!-- default button  -->
+      <button class="p-5 rounded-full text-black font-bold bg-gradient-to-r from-stone-300 via-slate-300 to-slate-300" onclick="Default() ,defaultChange()">Make Default</button>
+      <!-- button red -->
+      <button class="bg-gradient-to-r from-red-600 via-orange-700 to-red-600 p-5 rounded-full text-yellow-50 font-bold" onclick="red() ,redChange()">Make Red</button>
+      <!-- button Indigo -->
+      <button class="p-5 rounded-full text-yellow-50 font-bold bg-gradient-to-r from-indigo-600 via-blue-500 to-indigo-600" id="Make-Indigo">Make Indigo</button>
+      <!-- button Pink -->
+      <button id="pink-button" class="p-5 rounded-full text-yellow-50 font-bold bg-gradient-to-r from-pink-600 via-fuchsia-300-500 to-pink-600" i>Make Pink</button>
+    </div>
+
+    <div>
+      <p id="change-text" class="text-2xl font-bold text-center">Make Default</p>
+    </div>
+
+    <!-- input change  -->
+
+    <div class="text-center pt-5 font-bold space-y-4">
+      <h4>Change Input Below</h4>
+      <p id="text-change">Change Input Text <span>hi</span></p>
+
+      <input id="input-value" class="border-2 border-black rounded-md" type="text" />
+      <button id="update-btn" class="bg-lime-300 rounded-full p-2">Update</button>
+    </div>
+
+    <!-- post Comment  -->
+
+    <div class="w-1/2 mx-auto mt-8 space-y-4 text-gray-900" id="post-comment">
+      <h1 class="font-bold text-2xl text-center">Post Add your Mind</h1>
+      <p>
+        Facebook is an online social media and social networking service owned by American company Meta Platforms. Founded in 2004 by Mark Zuckerberg with fellow Harvard College students and roommates
+        Eduardo Saverin, Andrew McCollum, Dustin Moskovitz, and Chris Hughes, its name comes from the face book directories often given to American university students. Membership was initially
+        limited to Harvard students, gradually expanding to other North American universities and, since 2006, anyone over 13 years old. As of July 2022, Facebook claimed 2.93 billion monthly active
+        users,[6] and ranked third worldwide among the most visited websites as of July 2022.[7] It was the most downloaded mobile app of the 2010s.[8]
+      </p>
+    </div>
+
+    <!-- post btn -->
+    <div class="w-1/2 mx-auto mt-8 space-y-4 text-center py-10">
+      <textarea class="border-2 border-purple-700 border-dotted outline-0" name="" id="post-box" cols="100" rows="10"></textarea><br />
+      <button id="btn-post" class="bg-lime-300 rounded-lg p-6 font-bold text-2xl">Post</button>
+    </div>
+
+    <script src="./js/event.js"></script>
+  </body>
+</html>
